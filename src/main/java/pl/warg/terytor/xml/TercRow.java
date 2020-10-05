@@ -12,4 +12,8 @@ public class TercRow {
 	String rodz;
 	String nazwa;
 	String nazwa_dod;
+
+	public Integer getTercCode() {
+		return Integer.valueOf(""+woj+pow+gmi+rodz);
+	}
 }
