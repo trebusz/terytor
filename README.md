@@ -1,4 +1,4 @@
-(it's not yet usable, sorry)
+The library is in early stages of development and it's not yet usable.
 
 # Introduction
 
