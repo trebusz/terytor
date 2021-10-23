@@ -1,6 +1,7 @@
 package pl.warg.terytor.api;
 
 import pl.warg.terytor.TercService;
+import pl.warg.terytor.api.model.TercRecord;
 
 import java.util.Optional;
 
@@ -12,7 +13,11 @@ public class TercApiClient {
 		this.tercService = new TercService(tercPath);
 	}
 
-	public Optional<String> findNameByTerc(String terc) {
-		return tercService.findNameByTerc(Integer.valueOf(terc));
+	public Optional<String> findNameByTerc(String tercCode) {
+		return tercService.findNameByTerc(tercCode);
+	}
+
+	public TercRecord getFullTercInfo(String tercCode) {
+		return tercService.getFullTercInfo(tercCode);
 	}
 }
