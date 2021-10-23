@@ -51,7 +51,6 @@ public class TercHandler extends DefaultHandler {
 		content.append(ch, start, length);
 	}
 
-
 	public List<TercRow> getData() {
 		return data;
 	}
